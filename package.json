@@ -1,10 +1,12 @@
 {
-  "name": "amplify-js-app",
+  "name": "dsl-amplify-js-app",
   "version": "1.0.0",
   "description": "Amplify JavaScript Example",
   "dependencies": {
     "@aws-amplify/api": "latest",
-    "@aws-amplify/pubsub": "latest"
+    "@aws-amplify/pubsub": "latest",
+    "aws-amplify": "^1.2.4",
+    "aws-amplify-angular": "^3.1.4"
   },
   "devDependencies": {
     "webpack": "^4.17.1",
