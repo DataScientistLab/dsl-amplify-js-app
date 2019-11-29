@@ -1,2 +1,2 @@
 # dsl-amplify-js-app
-Sample DSL App
+Sample DSL Amplify App
