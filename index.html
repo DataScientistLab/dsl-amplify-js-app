@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 
 <html>
@@ -8,7 +9,75 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #ddd;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
 	</head>
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+	
 	<body class="is-preload">
 
 		<!-- Header -->
@@ -87,11 +156,42 @@
 						<section>
 							<h4>Products</h4>
 							<ul class="alt">
-								<li><p><a href="#">Cure.AI - Deep learning method to identify and localise abnormalities on X-rays, MRI and CT scans</a></p></li>
-								<li><p><a href="#">Chaya - Projects that involves deep analysis of customer profiles to identifying key risk areas</a></p></li>
-								<li><p><a href="#">Curiosity.AI - Detecting the right data for developing critical insights for businesses</a></p></li>
+								<li>
+								<div class="popup" onclick="myFunction()">									
+								<p>Cure.AI - Deep learning method to identify and localise abnormalities on X-rays, MRI and CT scans</p>
+								<span class="popuptext" id="myPopup">
+									Glimpse of Cure.AI product :
+									Cure.AI aim of is to provide a comprehensive and structured overview of extensive research on the advancement of data analytics 									methods for disease prevention. State-of-the-art data analytics algorithms used by this product for classification of disease, 									clustering (unusually high incidence of a particular disease), anomalies detection (detection of disease) and association as well as their 									respective advantages,drawbacks and guidelines for selection of specific model followed by discussion on recent development and successful 									application of disease prevention methods.
+								</span>
+								</div>
+								</li>
+								<li>
+								<div class="popup" onclick="myFunction()">
+									<p>Chaya - Projects that involves deep analysis of customer profiles to identifying key risk areas</p>
+								  <span class="popuptext" id="myPopup">
+									  Glimpse of Chaya product :
+									  Chaya analysis for customers the profiles or companies and applies deep learning methodologies to identify risks and any negative 									  aspects. The reasoning is used to make informed decision. The early adopters and target audience of the products  are for not in any 									  order - Business loan, personal funding, mortgage funding, or funding a startup initiative. This can be boon to customers who want to 									  relay on technology than making irrational or emotional decision when funding a business or person. 
+								  </span>
+								</div>
+								</li>
+								<li>
+								<div class="popup" onclick="myFunction()">									
+								<p>Cymphony - Orchestration of the musical notes and a toolkit to learn music</p>
+								<span class="popuptext" id="myPopup">
+									Glimpse of Cymphony product :-
+									Music connects people all over the world and is shared across cultures.This is a toolkit used for computer-aided musicology 
+									Cymphony allows us to learn the fundamentals of music theory,generate music examples and study music.You extract the contents of
+									our dataset & to take the output of the neural network & translate it to musical notation using is a high-level neural networks 									API.
+								</span>
+								</div>
+								</li>
+								<div><li><p>Curiosity.AI - Detecting the right data for developing critical insights for businesses</p></li></div>
+								<div><li>
+								<p>Chanykya - Find startgies to win using simulating trading methods to determine your next kill in Stock 								market</p>
+								</li></div>
 							</ul>
 						</section>
+
 						<section></section>
 						<section>
 							<h4>Follow Us</h4>
