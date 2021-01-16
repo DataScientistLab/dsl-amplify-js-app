@@ -71,8 +71,16 @@
 	</head>
 <script>
 // When the user clicks on div, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
+function myFunctionC1() {
+  var popup = document.getElementById("myPopupC1");
+  popup.classList.toggle("show");
+}
+function myFunctionC2() {
+  var popup = document.getElementById("myPopupC2");
+  popup.classList.toggle("show");
+}
+function myFunctionC3() {
+  var popup = document.getElementById("myPopupC3");
   popup.classList.toggle("show");
 }
 </script>
@@ -157,27 +165,27 @@ function myFunction() {
 							<h4>Products</h4>
 							<ul class="alt">
 								<li>
-								<div class="popup" onclick="myFunction()">									
+								<div class="popup" onclick="myFunctionC1()">									
 								<p>Cure.AI - Deep learning method to identify and localise abnormalities on X-rays, MRI and CT scans</p>
-								<span class="popuptext" id="myPopup">
+								<span class="popuptext" id="myPopupC1">
 									Glimpse of Cure.AI product :
 									Cure.AI aim of is to provide a comprehensive and structured overview of extensive research on the advancement of data analytics 									methods for disease prevention. State-of-the-art data analytics algorithms used by this product for classification of disease, 									clustering (unusually high incidence of a particular disease), anomalies detection (detection of disease) and association as well as their 									respective advantages,drawbacks and guidelines for selection of specific model followed by discussion on recent development and successful 									application of disease prevention methods.
 								</span>
 								</div>
 								</li>
 								<li>
-								<div class="popup" onclick="myFunction()">
+								<div class="popup" onclick="myFunctionC2()">
 									<p>Chaya - Projects that involves deep analysis of customer profiles to identifying key risk areas</p>
-								  <span class="popuptext" id="myPopup">
+								  <span class="popuptext" id="myPopupC2">
 									  Glimpse of Chaya product :
 									  Chaya analysis for customers the profiles or companies and applies deep learning methodologies to identify risks and any negative 									  aspects. The reasoning is used to make informed decision. The early adopters and target audience of the products  are for not in any 									  order - Business loan, personal funding, mortgage funding, or funding a startup initiative. This can be boon to customers who want to 									  relay on technology than making irrational or emotional decision when funding a business or person. 
 								  </span>
 								</div>
 								</li>
 								<li>
-								<div class="popup" onclick="myFunction()">									
+								<div class="popup" onclick="myFunctionC3()">									
 								<p>Cymphony - Orchestration of the musical notes and a toolkit to learn music</p>
-								<span class="popuptext" id="myPopup">
+								<span class="popuptext" id="myPopupC3">
 									Glimpse of Cymphony product :-
 									Music connects people all over the world and is shared across cultures.This is a toolkit used for computer-aided musicology 
 									Cymphony allows us to learn the fundamentals of music theory,generate music examples and study music.You extract the contents of
@@ -185,10 +193,10 @@ function myFunction() {
 								</span>
 								</div>
 								</li>
-								<div><li><p>Curiosity.AI - Detecting the right data for developing critical insights for businesses</p></li></div>
+								<!--<div><li><p>Curiosity.AI - Detecting the right data for developing critical insights for businesses</p></li></div>
 								<div><li>
 								<p>Chanykya - Find startgies to win using simulating trading methods to determine your next kill in Stock 								market</p>
-								</li></div>
+								</li></div>!-->
 							</ul>
 						</section>
 
